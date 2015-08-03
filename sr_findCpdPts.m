@@ -44,7 +44,7 @@ Img2 = imresize(Img2,[height/scale width/scale]);
 [Matches,Scores] = vl_ubcmatch(Dscpt1,Dscpt2,3); % match features between two images
 BadMatches = Scores>scoreThreshold*max(Scores); % discard matches with poor scores
 Matches(:,BadMatches) = [];
-if length(Matches)<100
+if length(Matches)<50
     error('Too few matches points, increase scoreThreshold value or use another image pair.')
 end
 MatchedFrame1 = Frame1(:,Matches(1,:));

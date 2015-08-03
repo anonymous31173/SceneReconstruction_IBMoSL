@@ -1,5 +1,5 @@
-function [RndPts1,RndPts2] = sr_randPick7Pts(Pos1,Pos2)
-% sr_randPick7Pts() random pick 7 corresponding points over whole image range
+function [RndPts1,RndPts2] = sr_randPick7CrpPts(Pos1,Pos2)
+% sr_randPick7CrpPts() random pick 7 corresponding points over whole image range
 % from all putative correspoing points.
 % 7 corresponding points should have a good spatial distribution over the
 % image to improve robustness, so randomly select 20 points from whole
